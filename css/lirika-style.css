@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Marck+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Marck+Script&family=Neucha&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Distressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+@media (width: 1080px), (height: 2400px){
+    .logo{
+        width: 6.5vw;
+        height: 6.5vw;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-list{
+        margin-right: 30px;
+    }
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ttlogo {
+    /* Цвет для браузеров без поддержки градиента */
+    color: #FF6B6B;
+    
+    /* Градиент для текста */
+    background-image: linear-gradient(
+        45deg,
+        #FF512F 0%,    /* Темно-оранжевый */
+        #FF6B6B 25%,   /* Коралловый */
+        #FF8E53 50%,   /* Светло-оранжевый */
+        #FFD700 100%   /* Золотой */
+    );
+    
+    /* Применение градиента к тексту */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    font-family: "Shantell Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BNCE" 0,
+      "INFM" 0,
+      "SPAC" 0;
+    
+    /* Дополнительные эффекты */
+    text-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
+    font-weight: bold;
+
+    margin-left: 70px;
+    margin-right: 60px;
+
+
+}
+
+.nav-list{
+    font-size: 2.3vw;
+    color: #71cafc;
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    text-decoration: none;
+    text-shadow: 
+    0 0 5px #ff3300,
+    0 0 10px #ff3300,
+    0 0 20px #ff3300,
+    0 0 40px #ff3300,
+    0 0 80px #ff3300;
+}
+
+.nav-list:hover{
+    text-decoration: underline;
+    text-decoration-color: deeppink;
+}
+
+#don{
+    color: #e73260;
+    text-decoration: none;
+}
+
+#don:hover{
+    text-decoration: underline;
+    text-decoration-color: #dee629;
+    text-shadow: 
+    0 0 5px #dee629,
+    0 0 10px #dee629,
+    0 0 20px #dee629,
+    0 0 40px #dee629,
+    0 0 80px #dee629;
+}
+
+.logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    height: 7vw;
+    width: 7vw;
+}
+
+
+body{
+    background-color: black;
+}
+
+
+footer{
+    background-color: black;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.foot-list{
+    color: bisque;
+    text-shadow: 
+        0 0 15px #00cf9d,
+        0 0 35px #00cf9d,
+        0 0 75px #00cf9d,
+        0 0 85px #00cf9d;
+    margin-right: 1vw;
+    font-size: 2vw;
+    align-items: center;
+}
+
+.hhh{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+#mainfra{
+    font-size: 5vw;
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: aqua;
+}
+
+#mainp{
+    font-size: 2.8vw;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 
+        0 0 5px #ff8fb8,
+        0 0 75px #FF6B6B;
+    font-family: "Sofia Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.name{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Rubik Distressed", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: #e73260;
+    text-shadow: 
+    0 0 5px #ff8fb8
+    0 0 50px #ff8fb8;
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+}
+
+.text {
+    font-size: 1.79rem;
+    font-family: "Neucha", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: antiquewhite;
+    text-shadow: 
+        0 0 5px #71cafc,
+        0 0 50px #93fff7;
+    white-space: pre-line; /* Сохраняем переносы строк */
+    text-align: left;
+    line-height: 1.6; /* Межстрочный интервал */
+    margin: 20px auto;
+    max-width: 600px; /* Ограничение ширины для удобочитаемости */
+}
+
+/* Красная строка для всех строк кроме первой */
+.text br + br::before {
+    content: "";
+    display: inline-block;
+    width: 2em; /* Размер красной строки */
+}
+
+/* Работаем */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 0;
+        position: relative;
+    }
+
+    .ttlogo {
+        margin: 15px 0;
+        font-size: 1.5rem;
+        text-align: center;
+        order: 2;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        order: 1;
+    }
+
+    /* Бургер-меню */
+    .nav-list {
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 1.2rem;
+        margin: 5px 0;
+        text-shadow: none;
+    }
+
+    #don {
+        order: 3;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #71cafc;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .menu-toggle:hover {
+        color: #ff3300;
+    }
+
+    /* Показываем меню при активном состоянии */
+    header.active .nav-list {
+        display: block;
+        order: 4;
+    }
+
+    /* Анимация для текста меню */
+    .nav-list:hover {
+        animation: neon-pulse 0.5s ease-in-out infinite alternate;
+    }
+
+    .picture{
+        display: grid;
+        margin-right: auto;
+        margin-right: auto;
+        text-align: center;
+        place-items: center;
+        max-height: 13.5vw;
+        max-width: 13.5vw;
+    }
+}
+
+@keyframes neon-pulse {
+    from {
+        text-shadow: 0 0 5px #ff3300;
+    }
+    to {
+        text-shadow: 0 0 20px #ff3300;
+    }
+}
+
+.descr{
+    display: flex;
+    color: gray;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.picture{
+    display: block; /* меняем с inline (по умолчанию) на block */
+    margin: 0 auto; /* автоматические отступы слева/справа */
+    max-width: 100%; /* для адаптивности */
+    text-align: center;
+    place-items: center;
+    max-height: 15vw;
+    max-width: 15vw;
+}

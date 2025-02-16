@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.dot {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ttlogo {
+    /* Цвет для браузеров без поддержки градиента */
+    color: #FF6B6B;
+    
+    /* Градиент для текста */
+    background-image: linear-gradient(
+        45deg,
+        #FF512F 0%,    /* Темно-оранжевый */
+        #FF6B6B 25%,   /* Коралловый */
+        #FF8E53 50%,   /* Светло-оранжевый */
+        #FFD700 100%   /* Золотой */
+    );
+    
+    /* Применение градиента к тексту */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    font-family: "Shantell Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BNCE" 0,
+      "INFM" 0,
+      "SPAC" 0;
+    
+    /* Дополнительные эффекты */
+    text-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
+    font-weight: bold;
+
+    margin-left: 70px;
+    margin-right: 60px;
+
+
+}
+
+.nav-list{
+    font-size: 2.3vw;
+    color: #71cafc;
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    text-decoration: none;
+    text-shadow: 
+    0 0 5px #ff3300,
+    0 0 10px #ff3300,
+    0 0 20px #ff3300,
+    0 0 40px #ff3300,
+    0 0 80px #ff3300;
+}
+
+.nav-list:hover{
+    text-decoration: underline;
+    text-decoration-color: deeppink;
+}
+
+#don{
+    color: #e73260;
+    text-decoration: none;
+}
+
+#don:hover{
+    text-decoration: underline;
+    text-decoration-color: #dee629;
+    text-shadow: 
+    0 0 5px #dee629,
+    0 0 10px #dee629,
+    0 0 20px #dee629,
+    0 0 40px #dee629,
+    0 0 80px #dee629;
+}
+
+.logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    width: 7vw;
+    height: 7vw;
+}
+
+
+
+body{
+    background-color: black;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    padding: 20px;
+}
+
+.foot-list{
+    color: bisque;
+    text-shadow: 
+        0 0 15px #00cf9d,
+        0 0 35px #00cf9d,
+        0 0 75px #00cf9d,
+        0 0 85px #00cf9d;
+    margin-right: 1vw;
+    font-size: 2vw;
+    align-items: center;
+}
+
+/* Работаем */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 0;
+        position: relative;
+    }
+
+    .ttlogo {
+        margin: 15px 0;
+        font-size: 1.5rem;
+        text-align: center;
+        order: 2;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        order: 1;
+    }
+
+    /* Бургер-меню */
+    .nav-list {
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 1.2rem;
+        margin: 5px 0;
+        text-shadow: none;
+    }
+
+    #don {
+        order: 3;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #71cafc;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .menu-toggle:hover {
+        color: #ff3300;
+    }
+
+    /* Показываем меню при активном состоянии */
+    header.active .nav-list {
+        display: block;
+        order: 4;
+    }
+
+    /* Анимация для текста меню */
+    .nav-list:hover {
+        animation: neon-pulse 0.5s ease-in-out infinite alternate;
+    }
+}
+
+@keyframes neon-pulse {
+    from {
+        text-shadow: 0 0 5px #ff3300;
+    }
+    to {
+        text-shadow: 0 0 20px #ff3300;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.hi{
+    font-size: 4rem;
+    color: aliceblue;
+
+}
+
+.swag{
+    font-size: 2rem;
+    color: antiquewhite;
+}
